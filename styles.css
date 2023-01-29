@@ -1,0 +1,233 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --red-color: #d01110;
+  --black-color: #0a0a00;
+  --ivory-color: #ebe8e0;
+  --celadon-color: #a8bbb0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  /* border: solid purple 4px; */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+
+  padding: 5rem 2rem 3rem 2rem;
+}
+/* ========== Header Section ============== */
+.header {
+  /* border: solid red 4px; */
+  height: 10%;
+}
+
+.header h1 {
+  font-size: 1.7rem;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.header span {
+  color: white;
+  font-size: 2.1rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 5px;
+  background-color: var(--red-color);
+  box-shadow: 1px 1px 15px 2px rgba(0, 0, 0, 0.05);
+}
+
+/* ========== Player Input  Section ============== */
+.content {
+  /* border: solid green 4px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 80%;
+  margin: 0 0rem;
+  box-shadow: -1px 5px 20px 5px rgba(0, 0, 0, 0.07);
+}
+
+.player-input-section {
+  /* border: solid gold 5px; */
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.player-input {
+  /* border: solid blue 4px; */
+  width: 40%;
+}
+
+.content h2 {
+  text-transform: capitalize;
+  font-size: 2rem;
+}
+.content h2 span {
+  background-color: var(--red-color);
+  padding: 0.1rem 0.2rem;
+  border-radius: 5px;
+  color: white;
+}
+
+.player-input h4 {
+  text-transform: capitalize;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+.player-input [type="text"] {
+  outline: none;
+  border: solid rgb(223, 223, 208) 1px;
+  width: 100%;
+  height: 2.5rem;
+  padding: 0 1rem;
+  background-color: var(--ivory-color);
+}
+.player-input [type="text"]:focus {
+  border: solid 2px var(--red-color);
+}
+
+button {
+  all: unset;
+  display:block;
+  background-color: var(--red-color);
+  color: white;
+  padding: 1rem 2rem;
+  text-transform: capitalize;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 500;
+  box-shadow: 1px 1px 15px 5px rgba(0, 0, 0, 0.07);
+  cursor: pointer;
+  transition: all 0.4s;
+  margin: 0 auto;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+  transform: scale(1.1);
+}
+
+
+.result-container{
+    /* border: solid rebeccapurple 4px; */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+.user-card-result-container{
+  /* border: solid blue 4px; */
+  display: flex;
+  justify-content: space-around;
+  height: 85%;
+  width: 90%;
+  
+}
+.user-card{
+    /* border: solid 3px green; */
+    border-radius: 20px;
+    background-color: var(--ivory-color);
+    width: 43%;
+    /* height: 100%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* gap: 1.5rem; */
+    align-items: center;
+    padding: 1rem 0.5rem;
+    box-shadow: 3px 3px 20px 5px rgba(0, 0, 0, 0.07);
+    position: relative;
+
+}
+
+.user-card.winner::before{
+  content: "Winner 🏆";
+  position: absolute;
+  font-weight: bold;
+  font-size: 1.2rem;
+  right:15px ;
+top: 10px;
+color: white;
+background: var(--red-color);
+  height: 28px;
+  width:100px;
+  padding: 0.4rem;
+  border-radius: 20px;
+  vertical-align: bottom;
+  text-align: center;
+  /* width: 28px; */
+}
+
+.account-information{
+    /* border: solid red; */
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+}
+.card-info{
+  /* border: solid; */
+  border-radius: 10px;
+  background-color: var(--red-color);
+  color: white;
+  width:30%;
+  text-align: center;
+  padding: 0.4rem 0.5rem;
+
+
+}
+
+
+
+.card-info p{
+  margin-top: 0.3rem;
+}
+
+.card-info h5{
+  text-transform: capitalize;
+}
+.user-img{
+    height: 90px;
+    border-radius: 50%;
+    padding: 0.2rem;
+    background-color: white;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+
+
+.user-card > p{
+  font-size: 0.9rem;
+  text-align: center;
+  margin: 1.5rem 0;
+
+}
+
+.content-wrraper{
+/* border: solid 2px red; */
+height: 90%;
+width: 60%;
+margin:1rem auto 1rem auto;
+
+/* padding: 0 2rem; */
+
+}
